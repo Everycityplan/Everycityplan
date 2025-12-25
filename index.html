@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EveryCity Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">EveryCity</div>
+    <nav class="nav">
+      <a href="#destinations">Destinations</a>
+      <a href="#itineraries">Itineraries</a>
+      <a href="#planning">Planning</a>
+      <a href="plans.html">Members</a>
+      <a href="#cta" class="button">Plan a trip</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">Tailored journeys</p>
+        <h1>See the world like a local—without doing all the planning.</h1>
+        <p class="lede">
+          EveryCity connects you with curated city guides, weekend routes, and
+          concierge-level travel planning. Swap endless tabs for a trip that just
+          works.
+        </p>
+        <div class="cta-row">
+          <a class="button" href="#planning">Start planning</a>
+          <a class="ghost" href="#destinations">Browse inspiration</a>
+        </div>
+        <div class="hero__stats">
+          <div>
+            <strong>120+</strong>
+            <span>city playbooks</span>
+          </div>
+          <div>
+            <strong>35k</strong>
+            <span>travelers guided</span>
+          </div>
+          <div>
+            <strong>4.9★</strong>
+            <span>average rating</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__card">
+        <div class="card">
+          <p class="eyebrow">Featured route</p>
+          <h2>Lisbon in 72 hours</h2>
+          <ul>
+            <li>Pastel de nata crawl in Belém</li>
+            <li>Sunset sail under the 25 de Abril bridge</li>
+            <li>Fado supper in Alfama</li>
+          </ul>
+          <div class="pill">All bookings handled</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations" class="panel">
+      <header class="panel__header">
+        <div>
+          <p class="eyebrow">Curated destinations</p>
+          <h2>Pick a city and we handle the details.</h2>
+          <p class="lede">
+            Our specialists craft local-first itineraries with verified spots,
+            smart logistics, and options for families, foodies, and solo
+            explorers.
+          </p>
+        </div>
+        <a class="ghost" href="#planning">Talk to a planner</a>
+      </header>
+      <div class="grid">
+        <article class="tile">
+          <div class="tile__img lisbon"></div>
+          <div class="tile__body">
+            <h3>Lisbon</h3>
+            <p>Atlantic sunsets, tiled alleys, and legendary seafood.</p>
+            <span class="pill">3 & 5 day plans</span>
+          </div>
+        </article>
+        <article class="tile">
+          <div class="tile__img kyoto"></div>
+          <div class="tile__body">
+            <h3>Kyoto</h3>
+            <p>Matcha, temples, and hidden streets that glow at dusk.</p>
+            <span class="pill">Zen retreats</span>
+          </div>
+        </article>
+        <article class="tile">
+          <div class="tile__img mexico"></div>
+          <div class="tile__body">
+            <h3>Mexico City</h3>
+            <p>Design-forward stays, mezcal tastings, and art in every barrio.</p>
+            <span class="pill">Food-led routes</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="itineraries" class="panel muted">
+      <header class="panel__header">
+        <div>
+          <p class="eyebrow">Sample itineraries</p>
+          <h2>Weekend routes that feel effortless.</h2>
+        </div>
+        <a class="ghost" href="#cta">See full gallery</a>
+      </header>
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="time">Morning</div>
+          <div>
+            <h3>Neighborhood coffee crawl</h3>
+            <p>Skip the lines with pre-booked tables and local barista picks.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="time">Afternoon</div>
+          <div>
+            <h3>Museum + market pairing</h3>
+            <p>Culture hit followed by market snacks reserved ahead of time.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="time">Evening</div>
+          <div>
+            <h3>Golden-hour lookout</h3>
+            <p>Sunset at a locals-only viewpoint with rideshare queued.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="planning" class="panel">
+      <header class="panel__header">
+        <div>
+          <p class="eyebrow">How it works</p>
+          <h2>Human planners + smart tools.</h2>
+        </div>
+      </header>
+      <div class="columns">
+        <div>
+          <h3>1. Tell us your vibe</h3>
+          <p>Share dates, pace, and must-haves. We tailor every day to you.</p>
+        </div>
+        <div>
+          <h3>2. Approve the plan</h3>
+          <p>Review a clear schedule with transit times, dining holds, and backups.</p>
+        </div>
+        <div>
+          <h3>3. Travel stress-free</h3>
+          <p>Get a live itinerary with updates, chat support, and offline access.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta" class="cta">
+      <div>
+        <p class="eyebrow">Ready to go?</p>
+        <h2>Plan your next city escape.</h2>
+        <p class="lede">Give us your dates and dream spots—we'll send a tailored plan.</p>
+      </div>
+      <a class="button" href="mailto:hello@everycity.travel">Start my plan</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <div class="logo">EveryCity</div>
+      <p>Travel designed for people who care about the details.</p>
+    </div>
+    <div class="footer__links">
+      <a href="#destinations">Destinations</a>
+      <a href="#planning">Process</a>
+      <a href="mailto:hello@everycity.travel">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

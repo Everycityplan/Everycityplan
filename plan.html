@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EveryCityPlan | Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="plan-viewer">
+    <header class="topbar" style="position: static; background: transparent;">
+      <div class="logo">everycityplan</div>
+      <nav class="nav">
+        <a href="dashboard.html">Dashboard</a>
+        <button class="ghost" data-logout onclick="logout(); location.href='login.html';">Log out</button>
+      </nav>
+    </header>
+
+    <section class="plan-watermark">
+      <div class="plan-meta">
+        <span class="pill" data-plan-city>City</span>
+        <span class="pill" data-plan-days>Duration</span>
+        <span class="pill">for <span data-plan-owner>Member</span></span>
+      </div>
+      <h1 data-plan-title>Plan title</h1>
+      <p class="lede">Only 1–2 days stay expanded to discourage long screenshots.</p>
+
+      <div class="accordion" data-accordion></div>
+
+      <p class="watermark-note">
+        <strong>Note:</strong>
+        This custom plan is licensed only for your personal trip. Please don’t share or redistribute.
+      </p>
+    </section>
+
+    <div class="tooltip" aria-live="polite"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

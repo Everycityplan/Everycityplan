@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EveryCityPlan | Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard">
+    <header class="topbar" style="position: static; background: transparent;">
+      <div class="logo">everycityplan</div>
+      <nav class="nav">
+        <a href="plans.html">Plans</a>
+        <button class="ghost" data-logout>Log out</button>
+      </nav>
+    </header>
+
+    <div class="dashboard__header">
+      <div>
+        <p class="eyebrow">Dashboard</p>
+        <h1>Hi, <span data-username>Traveler</span> — your plans are ready.</h1>
+        <p class="lede">Open a plan to view day-by-day holds and maps.</p>
+      </div>
+      <a class="button" href="plans.html">Preview other cities</a>
+    </div>
+
+    <section class="card-grid" data-plans-list></section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EveryCityPlan | Custom Plans</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="logo">everycityplan</div>
+      <nav class="nav">
+        <a href="index.html">Studio</a>
+        <a href="plans.html" class="ghost">Plans</a>
+        <a class="button" href="signup.html">Create account</a>
+      </nav>
+    </header>
+
+    <section class="members-hero">
+      <div class="members-hero__content">
+        <p class="eyebrow">Custom city plans · Members only</p>
+        <h1>Custom city plans in minutes. Built by planners, guarded for members.</h1>
+        <p class="lede">
+          Browse a few real itineraries, then unlock the full experience with your account.
+          Each plan blends concierge holds, local intel, and maps you can drop right into your phone.
+        </p>
+        <div class="badges">
+          <span class="badge">Ready-to-book restaurants</span>
+          <span class="badge">Transit + walking maps</span>
+          <span class="badge">Backups for every slot</span>
+        </div>
+        <div class="inline-actions">
+          <a class="button" href="signup.html">Create my account</a>
+          <a class="ghost" href="login.html">See example plan (login required)</a>
+        </div>
+      </div>
+      <div class="members-hero__card">
+        <h3>What members see</h3>
+        <ul>
+          <li>Day-by-day holds with timing buffers</li>
+          <li>Restaurant notes, alternative backups, and maps</li>
+          <li>Dynamic accordion view to discourage screenshots</li>
+        </ul>
+        <div class="muted-cta">Sign in to unlock the full planner dashboard.</div>
+      </div>
+    </section>
+
+    <main style="padding-top: 0;">
+      <section class="panel" style="padding-top: 0;">
+        <header class="panel__header">
+          <div>
+            <p class="eyebrow">Preview</p>
+            <h2>Plans we ship to members</h2>
+            <p class="lede">Blurred previews give a hint. Full details wait behind login.</p>
+          </div>
+        </header>
+        <div class="teaser-grid" data-teasers></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
