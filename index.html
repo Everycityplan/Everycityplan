@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Every City Plan | Secure Viewer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">Every City Plan</p>
+      <h1>Sell and showcase travel plans with a secure, time-boxed viewer.</h1>
+      <p class="lede">
+        Welcome to the Every City Plan secure portal. Travelers can log in to view personalized city plans without downloads,
+        printing, or easy screenshots, while you keep control of your premium itineraries.
+      </p>
+    </div>
+    <div class="hero__cta">
+      <div class="card" id="login-card">
+        <h2>Member sign-in</h2>
+        <p class="muted">Use your email and password to open your plan.</p>
+        <form id="login-form" class="form">
+          <label class="form__label" for="email">Email</label>
+          <input class="form__input" id="email" name="email" type="email" autocomplete="username" required />
+          <label class="form__label" for="password">Password</label>
+          <input class="form__input" id="password" name="password" type="password" autocomplete="current-password" required />
+          <button class="button" type="submit">Access my plan</button>
+          <p class="helper">Tip: use <strong>traveler@everycityplan.com</strong> / <strong>demo123</strong> to try it.</p>
+        </form>
+        <p class="status" id="status" role="status"></p>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="card" id="viewer" aria-live="polite" hidden>
+      <div class="viewer__header">
+        <div>
+          <p class="eyebrow" id="welcome"></p>
+          <h2 id="city-title">Your secure plan</h2>
+          <p class="muted" id="session-timer">Session time: --:-- remaining</p>
+        </div>
+        <div class="controls">
+          <label class="form__label" for="city-select">Change city</label>
+          <select id="city-select" class="form__input form__input--select"></select>
+          <button class="button button--ghost" id="restart-session" type="button">Restart timer</button>
+        </div>
+      </div>
+
+      <div class="viewer__body">
+        <aside class="panel">
+          <h3>Plan navigation</h3>
+          <ul class="nav" id="day-nav"></ul>
+          <div class="callout">
+            <p class="callout__title">Capture-safe design</p>
+            <ul class="callout__list">
+              <li>Watermarked with the signed-in email</li>
+              <li>Download, printing, and selection disabled</li>
+              <li>Session expires automatically</li>
+            </ul>
+          </div>
+        </aside>
+        <article class="plan" id="plan">
+          <div class="watermark" id="watermark" aria-hidden="true"></div>
+          <div class="plan__content" id="plan-content"></div>
+          <div class="overlay" id="overlay" hidden>
+            <p>Your secure viewing session has ended. Restart the timer to continue.</p>
+            <button class="button" id="reactivate" type="button">Reactivate viewer</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Need a bespoke travel plan? Email <a href="mailto:hello@everycityplan.com">hello@everycityplan.com</a>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
