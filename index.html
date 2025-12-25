@@ -3,78 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Every City Plan | Secure Viewer</title>
+  <title>Every City Plan | Sign in</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="hero__content">
+  <main class="page">
+    <section class="intro">
       <p class="eyebrow">Every City Plan</p>
-      <h1>Sell and showcase travel plans with a secure, time-boxed viewer.</h1>
-      <p class="lede">
-        Welcome to the Every City Plan secure portal. Travelers can log in to view personalized city plans without downloads,
-        printing, or easy screenshots, while you keep control of your premium itineraries.
-      </p>
-    </div>
-    <div class="hero__cta">
-      <div class="card" id="login-card">
-        <h2>Member sign-in</h2>
-        <p class="muted">Use your email and password to open your plan.</p>
-        <form id="login-form" class="form">
-          <label class="form__label" for="email">Email</label>
-          <input class="form__input" id="email" name="email" type="email" autocomplete="username" required />
-          <label class="form__label" for="password">Password</label>
-          <input class="form__input" id="password" name="password" type="password" autocomplete="current-password" required />
-          <button class="button" type="submit">Access my plan</button>
-          <p class="helper">Tip: use <strong>traveler@everycityplan.com</strong> / <strong>demo123</strong> to try it.</p>
-        </form>
-        <p class="status" id="status" role="status"></p>
-      </div>
-    </div>
-  </header>
+      <h1>Sign in to view your travel plans</h1>
+      <p class="lede">Access your purchased city plan with your account email and password. Your content stays protected while you browse.</p>
+      <ul class="bullets">
+        <li>Secure, time-boxed viewing of your itinerary</li>
+        <li>No downloads or printing to keep plans exclusive</li>
+        <li>Personalized recommendations for any city</li>
+      </ul>
+    </section>
 
-  <main class="layout">
-    <section class="card" id="viewer" aria-live="polite" hidden>
-      <div class="viewer__header">
-        <div>
-          <p class="eyebrow" id="welcome"></p>
-          <h2 id="city-title">Your secure plan</h2>
-          <p class="muted" id="session-timer">Session time: --:-- remaining</p>
-        </div>
-        <div class="controls">
-          <label class="form__label" for="city-select">Change city</label>
-          <select id="city-select" class="form__input form__input--select"></select>
-          <button class="button button--ghost" id="restart-session" type="button">Restart timer</button>
-        </div>
+    <section class="panel">
+      <div class="panel__header">
+        <h2>Member login</h2>
+        <p class="muted">Enter your credentials to continue.</p>
       </div>
+      <form id="login-form" class="form" novalidate>
+        <label class="form__label" for="email">Email</label>
+        <input class="form__input" id="email" name="email" type="email" autocomplete="username" required />
 
-      <div class="viewer__body">
-        <aside class="panel">
-          <h3>Plan navigation</h3>
-          <ul class="nav" id="day-nav"></ul>
-          <div class="callout">
-            <p class="callout__title">Capture-safe design</p>
-            <ul class="callout__list">
-              <li>Watermarked with the signed-in email</li>
-              <li>Download, printing, and selection disabled</li>
-              <li>Session expires automatically</li>
-            </ul>
+        <div class="form__row">
+          <div class="form__field">
+            <label class="form__label" for="password">Password</label>
+            <input class="form__input" id="password" name="password" type="password" autocomplete="current-password" required />
           </div>
-        </aside>
-        <article class="plan" id="plan">
-          <div class="watermark" id="watermark" aria-hidden="true"></div>
-          <div class="plan__content" id="plan-content"></div>
-          <div class="overlay" id="overlay" hidden>
-            <p>Your secure viewing session has ended. Restart the timer to continue.</p>
-            <button class="button" id="reactivate" type="button">Reactivate viewer</button>
-          </div>
-        </article>
-      </div>
+          <button class="button button--ghost" id="toggle-password" type="button" aria-pressed="false">Show</button>
+        </div>
+
+        <div class="form__row form__row--between">
+          <label class="checkbox">
+            <input type="checkbox" id="remember" name="remember" />
+            <span>Remember me on this device</span>
+          </label>
+          <a class="link" href="#" aria-disabled="true">Forgot password?</a>
+        </div>
+
+        <button class="button" type="submit">Log in</button>
+        <p class="helper">Demo access: <strong>traveler@everycityplan.com</strong> / <strong>demo123</strong></p>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+      </form>
     </section>
   </main>
 
   <footer class="footer">
-    <p>Need a bespoke travel plan? Email <a href="mailto:hello@everycityplan.com">hello@everycityplan.com</a>.</p>
+    <p>Need help? Email <a href="mailto:hello@everycityplan.com">hello@everycityplan.com</a>.</p>
   </footer>
 
   <script src="script.js"></script>

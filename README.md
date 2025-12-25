@@ -1,18 +1,18 @@
-# Every City Plan – Secure plan viewer
+# Every City Plan – Login screen
 
-A simple static prototype for the Every City Plan website. Travelers sign in to a secure viewer to browse time-limited city itineraries without downloading or printing them.
+A focused login page prototype for the Every City Plan website. Collects a user's email and password with a modern, secure-first design.
 
 ## Features
-- **Login gate** with demo credentials (`traveler@everycityplan.com` / `demo123`).
-- **Secure viewing controls**: watermarking, disabled copy/print shortcuts, and blocked context menu.
-- **Timed sessions**: automatic expiration with a one-click reactivation button.
-- **City selector** for New York, Paris, and Tokyo sample plans.
+- **Member login form** with required email and password inputs.
+- **Password visibility toggle** to quickly check entries without retyping.
+- **Demo credentials** for previewing the flow: `traveler@everycityplan.com` / `demo123`.
+- **Inline validation messaging** for success and error states.
 
 ## Usage
 1. Open `index.html` in a browser.
-2. Sign in with the demo credentials above (or any non-empty email/password for exploration).
-3. Browse the plan; note that downloads, copy shortcuts, and printing are blocked and the session counts down.
+2. Enter your account email and password, or use the demo credentials above.
+3. Submit to see inline feedback for a successful or failed login attempt.
 
 ## Notes
-- The anti-download and anti-screenshot measures are deterrents; no web app can fully prevent screen capture.
-- Extend the `plans` object in `script.js` to add real itineraries and city-specific tips.
+- The "Forgot password" link is disabled in this prototype and can be wired to recovery flows later.
+- Replace the demo validation in `script.js` with your real authentication call when integrating.
