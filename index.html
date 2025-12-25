@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Every City Plan | Sign in</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="intro">
+      <p class="eyebrow">Every City Plan</p>
+      <h1>Sign in to view your travel plans</h1>
+      <p class="lede">Access your purchased city plan with your account email and password. Your content stays protected while you browse.</p>
+      <ul class="bullets">
+        <li>Secure, time-boxed viewing of your itinerary</li>
+        <li>No downloads or printing to keep plans exclusive</li>
+        <li>Personalized recommendations for any city</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <div class="panel__header">
+        <h2>Member login</h2>
+        <p class="muted">Enter your credentials to continue.</p>
+      </div>
+      <form id="login-form" class="form" novalidate>
+        <label class="form__label" for="email">Email</label>
+        <input class="form__input" id="email" name="email" type="email" autocomplete="username" required />
+
+        <div class="form__row">
+          <div class="form__field">
+            <label class="form__label" for="password">Password</label>
+            <input class="form__input" id="password" name="password" type="password" autocomplete="current-password" required />
+          </div>
+          <button class="button button--ghost" id="toggle-password" type="button" aria-pressed="false">Show</button>
+        </div>
+
+        <div class="form__row form__row--between">
+          <label class="checkbox">
+            <input type="checkbox" id="remember" name="remember" />
+            <span>Remember me on this device</span>
+          </label>
+          <a class="link" href="#" aria-disabled="true">Forgot password?</a>
+        </div>
+
+        <button class="button" type="submit">Log in</button>
+        <p class="helper">Demo access: <strong>traveler@everycityplan.com</strong> / <strong>demo123</strong></p>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Need help? Email <a href="mailto:hello@everycityplan.com">hello@everycityplan.com</a>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
